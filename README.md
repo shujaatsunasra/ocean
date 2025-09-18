@@ -1,6 +1,11 @@
-# Shanks Protocol - Ocean Data Analysis Platform
+# 🌊 Ocean AI Assistant
 
-A sophisticated Next.js 15 web application for real-time oceanographic data analysis powered by Argovis API and AI.
+A sophisticated AI-powered ocean data analysis and visualization platform that combines real-time data from Argovis with intelligent query processing and interactive 3D visualizations.
+
+![Ocean AI Assistant](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 ## 🌊 Features
 
