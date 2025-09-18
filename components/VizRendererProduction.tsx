@@ -157,7 +157,6 @@ export function VizRenderer({
             onHover={onHover}
             onClick={onClick}
             onComplete={handleVisualizationComplete}
-            onResearchSummary={onResearchSummary}
           />
         );
 
