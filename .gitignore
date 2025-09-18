@@ -106,3 +106,5 @@ mcp_server.log
 # Temporary files
 *.tmp
 *.temp
+
+.vercel

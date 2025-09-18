@@ -1,17 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { MCPOrchestrator, UserMode } from '../../../../lib/mcp/orchestrator'
-
-// Load environment configuration with fallback to environment.config.js
-const envConfig = require('../../../../environment.config.js');
-
-const config = {
-  argovisApiKey: process.env.ARGOVIS_API_KEY || envConfig.ARGOVIS_API_KEY || '748fbfd67cd8556d064a0dd54351ce0ef89d4f08',
-  argovisBaseUrl: process.env.ARGOVIS_BASE_URL || envConfig.ARGOVIS_BASE_URL || 'https://argovis-api.colorado.edu',
-  groqApiKey: process.env.GROQ_API_KEY || envConfig.GROQ_API_KEY,
-  huggingFaceApiKey: process.env.HUGGINGFACE_API_KEY || envConfig.HUGGINGFACE_API_KEY,
-  enableFailureExpansion: true,
-  timeoutMs: 10000 // Reduced to 10 seconds
-}
+import { config } from '../../../../lib/config'
 
 // Initialize MCP Orchestrator
 const orchestrator = new MCPOrchestrator(config)

@@ -2,6 +2,12 @@ import { NextResponse } from 'next/server'
 
 async function callMCPServer(method: string, params: any): Promise<any> {
     try {
+        // MCP server is not available in Vercel serverless environment
+        // Skip MCP server calls in production
+        if (process.env.NODE_ENV === 'production') {
+            throw new Error('MCP server not available in production');
+        }
+
         const response = await fetch('http://localhost:5001/api/mcp/' + method, {
             method: 'POST',
             headers: {
